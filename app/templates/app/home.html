@@ -1,0 +1,122 @@
+{%extends 'app/base.html'%}
+{%load static%}
+{%block title%}Home{%endblock title%}
+{% block banner_slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="4000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/img1.jpg' %}" height="460" width="100%" class="d-block w-100" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/img2.jpg' %}" height="460" width="100%" class="d-block w-100" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/img3.jpg' %}" height="460" width="100%" class="d-block w-100" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/img5.jpg' %}" height="460" width="100%" class="d-block w-100" alt="Fourth slide">
+      </div>
+    </div>
+  </div>
+  {% endblock banner_slider%}
+  {%block main-content%}
+  <h1 class="heading" style="font-size: 2.5rem;text-align: center;color: #333;padding: 1rem;margin: 2rem 0;
+  background: rgba(255,51,153,.05);">BEST<span style="color: #e84393;">DEALS</span></h1>
+  &nbsp;&nbsp;<div class="card" style="width: 18rem;display: inline-block;margin-right: 10px;">
+    <div class="badge" style="position: absolute;left: 0;top: 20px;text-transform: uppercase;
+    font-size: 13px;font-weight: 700;background: red;color: #fff;padding: 3px 10px;">Hot</div>
+    <img src="{%static 'app/images/banner/paint1.jpg'%}"class="card-img-top" alt="...">
+    <div class="card-body" style="height: 13rem;">
+      <h5 class="card-title">Painting</h5>
+      <p class="card-text"></p>
+      <div class="product-price" style="font-size: 18px; color: #000000; font-weight: 600;">
+        <small style="font-size: 80%; font-weight: 400; text-decoration: line-through; display: inline-block; margin-right: 5px;"><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>96.00</small><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>120.99</div>
+      <a href="#" class="btn btn-primary" style="margin-bottom:20px;margin-left: 130px;">Add to cart</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;display: inline-block;margin-right: 10px;">
+    <div class="badge" style="position: absolute;left: 0;top: 20px;text-transform: uppercase;
+    font-size: 13px;font-weight: 700;background: red;color: #fff;padding: 3px 10px;">Hot</div>
+    <img src="{%static 'app/images/banner/jewel1_zNctekQ.jpg'%}" class="card-img-top" alt="...">
+    <div class="card-body" style="height: 13rem;">
+      <h5 class="card-title">Jewel</h5>
+      <p class="card-text"></p>
+      <div class="product-price" style="font-size: 18px; color: #000000; font-weight: 600;">
+        <small style="font-size: 80%; font-weight: 400; text-decoration: line-through; display: inline-block; margin-right: 5px;"><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>96.00</small><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>440.99</div>
+      <a href="#" class="btn btn-primary" style="margin-bottom:20px;margin-left: 130px;">Add to cart</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;display: inline-block;margin-right: 10px;">
+    <div class="badge" style="position: absolute;left: 0;top: 20px;text-transform: uppercase;
+    font-size: 13px;font-weight: 700;background: red;color: #fff;padding: 3px 10px;">Hot</div>
+    <img src="{%static 'app/images/banner/deco2.jpg'%}" class="card-img-top" alt="...">
+    <div class="card-body" style="height: 13rem;">
+      <h5 class="card-title">Decor</h5>
+      <p class="card-text"></p>
+      <div class="product-price" style="font-size: 18px; color: #000000; font-weight: 600;">
+        <small style="font-size: 80%; font-weight: 400; text-decoration: line-through; display: inline-block; margin-right: 5px;"><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>96.00</small><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>230.99</div>
+      <a href="#" class="btn btn-primary" style="margin-bottom:20px;margin-left: 130px;">Add to cart</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;display: inline-block;margin-right: 10px;">
+    <div class="badge" style="position: absolute;left: 0;top: 20px;text-transform: uppercase;
+    font-size: 13px;font-weight: 700;background: red;color: #fff;padding: 3px 10px;">Hot</div>
+    <img src="{%static 'app/images/banner/deco3_m8vnCCb.jpg'%}" class="card-img-top" alt="...">
+    <div class="card-body" style="height: 13rem;">
+      <h5 class="card-title">decor</h5>
+      <p class="card-text"></p>
+      <div class="product-price" style="font-size: 18px; color: #000000; font-weight: 600;">
+        <small style="font-size: 80%; font-weight: 400; text-decoration: line-through; display: inline-block; margin-right: 5px;"><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>96.00</small><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>997.99</div>
+      <a href="#" class="btn btn-primary" style="margin-bottom:20px;margin-left: 130px;">Add to cart</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;display: inline-block;margin-right: 10px;">
+    <div class="badge" style="position: absolute;left: 0;top: 20px;text-transform: uppercase;
+    font-size: 13px;font-weight: 700;background: red;color: #fff;padding: 3px 10px;">Hot</div>
+    <img src="{%static 'app/images/banner/img4.jpg'%}" class="card-img-top" alt="...">
+    <div class="card-body" style="height: 13rem;">
+      <h5 class="card-title">Painting</h5>
+      <p class="card-text"></p>
+      <div class="product-price" style="font-size: 18px; color: #000000; font-weight: 600;">
+        <small style="font-size: 80%; font-weight: 400; text-decoration: line-through; display: inline-block; margin-right: 5px;"><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>96.00</small><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>333.99</div>
+      <a href="#" class="btn btn-primary" style="margin-bottom:20px;margin-left: 130px;">Add to cart</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;display: inline-block;margin-right: 10px;">
+    <div class="badge" style="position: absolute;left: 0;top: 20px;text-transform: uppercase;
+    font-size: 13px;font-weight: 700;background: red;color: #fff;padding: 3px 10px;">Hot</div>
+    <img src="{%static 'app/images/banner/pot1.jpg'%}" class="card-img-top" alt="...">
+    <div class="card-body" style="height: 13rem;display: inline-block;
+    margin-right: 10px;">
+      <h5 class="card-title">pot</h5>
+      <p class="card-text"></p>
+      <div class="product-price" style="font-size: 18px; color: #000000; font-weight: 600;">
+        <small style="font-size: 80%; font-weight: 400; text-decoration: line-through; display: inline-block; margin-right: 5px;"><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>96.00</small><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>890.99</div>
+      <a href="#" class="btn btn-primary" style="margin-bottom:20px;margin-left: 130px;">Add to cart</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;display: inline-block;margin-right: 10px;">
+    <div class="badge" style="position: absolute;left: 0;top: 20px;text-transform: uppercase;
+    font-size: 13px;font-weight: 700;background: red;color: #fff;padding: 3px 10px;">Hot</div>
+    <img src="{%static 'app/images/banner/pot2.jpg'%}" class="card-img-top" alt="...">
+    <div class="card-body" style="height: 13rem;">
+      <h5 class="card-title">pot</h5>
+      <p class="card-text"></p>
+      <div class="product-price" style="font-size: 18px; color: #000000; font-weight: 600;">
+        <small style="font-size: 80%; font-weight: 400; text-decoration: line-through; display: inline-block; margin-right: 5px;"><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>96.00</small><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>770.99</div>
+      <a href="#" class="btn btn-primary" style="margin-bottom:20px;margin-left: 130px;">Add to cart</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;display: inline-block;margin-right: 10px;">
+    <div class="badge" style="position: absolute;left: 0;top: 20px;text-transform: uppercase;
+    font-size: 13px;font-weight: 700;background: red;color: #fff;padding: 3px 10px;">Hot</div>
+    <img src="{%static 'app/images/banner/needle1_vzidQOa.jpg'%}" class="card-img-top" alt="...">
+    <div class="card-body" style="height: 13rem;">
+      <h5 class="card-title">Needle</h5>
+      <p class="card-text"></p>
+      <div class="product-price" style="font-size: 18px; color: #000000; font-weight: 600;">
+        <small style="font-size: 80%; font-weight: 400; text-decoration: line-through; display: inline-block; margin-right: 5px;"><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>96.00</small><i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>530.99</div>
+      <a href="#" class="btn btn-primary" style="margin-bottom:20px;margin-left: 130px;">Add to cart</a>
+    </div>
+  </div>
+{%endblock main-content%}
